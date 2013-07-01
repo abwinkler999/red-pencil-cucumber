@@ -1,3 +1,3 @@
-class RedPencil
+class Product
 
 end
