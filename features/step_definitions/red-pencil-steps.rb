@@ -12,6 +12,6 @@ When(/^I apply a discount of (\d+)%$/) do |arg1|
   @item.validate_discount(0.1)
 end
 
-Then(/^the price should be set to (\d+)%$/) do |arg1|
+Then(/^the price should be set to (\d+)$/) do |arg1|
   @item.current_price == arg1
 end
