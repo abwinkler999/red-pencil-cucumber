@@ -1,4 +1,4 @@
-require 'red_pencil'
+require 'product'
 
 Before do
 	@item = Product.new
