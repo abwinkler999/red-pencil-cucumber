@@ -7,6 +7,7 @@ describe Product do
 	before(:each) do
 		@item = Product.new
 		@item.original_price = 100
+		@shop = Store.new
 	end
 
 	it "can discount an object by 10%" do
@@ -31,3 +32,9 @@ describe Product do
 	end
 end
 
+describe Store do
+
+	before(:each) do
+		@shop = Store.new
+	end
+end

@@ -4,7 +4,7 @@ Before do
 	@item = Product.new
 end
 
-Given(/^I have created a product with a price (\d+)$/) do |arg1|
+Given(/^I have created a promotion with a price (\d+)$/) do |arg1|
   @item.original_price = arg1
 end
 

@@ -14,13 +14,6 @@ class Product
 		end
 	end
 
-	def advance_clock(days)
-		@day += days
-		if @day > 30
-			@discount = 0
-		end
-	end
-
 	def current_price
 		@original_price * (1 - @discount)
 	end
