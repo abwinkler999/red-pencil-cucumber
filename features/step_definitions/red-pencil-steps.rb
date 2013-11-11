@@ -1,6 +1,8 @@
 require 'product'
+require 'store'
 
 Before do
+	@shop = Store.new
 	@item = Product.new
 end
 
@@ -17,5 +19,5 @@ Then(/^the price should be set to (\d+)$/) do |arg1|
 end
 
 When(/^I advance the clock by (\d+) days$/) do |arg1|
-  @item.advance_clock(arg1.to_i)
+  @shop.advance_clock(arg1.to_i)
 end

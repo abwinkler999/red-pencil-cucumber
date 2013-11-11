@@ -27,7 +27,7 @@ describe Product do
 
 	it "can't run a promotion longer than 30 days" do
 		@item.validate_discount(0.10)
-		@item.advance_clock(60)
+		@shop.advance_clock(60)
 		@item.current_price.should == 100
 	end
 end
